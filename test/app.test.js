@@ -8,3 +8,10 @@ it('Call the / endpoint', async done => {
     expect(res.text).toBe('Hello World With CI/CD')
     done()
 })
+
+it('Call the /hai endpoint', async done => {
+    const res = await request.get('/hai')
+    expect(res.status).toBe(200)
+    expect(res.text).toBe('Hai')
+    done()
+})
