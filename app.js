@@ -8,7 +8,7 @@ app.get('/', function (req, res) {
 	return res.send('Hello World With CI/CD');
 });
 app.get('/hai', function (req, res) {
-	return res.send('Hai');
+	return res.send('Hai from ci/cd');
 });
 
 

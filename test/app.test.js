@@ -12,6 +12,6 @@ it('Call the / endpoint', async (done) => {
 it('Call the /hai endpoint', async (done) => {
 	const res = await request.get('/hai');
 	expect(res.status).toBe(200);
-	expect(res.text).toBe('Hai');
+	expect(res.text).toBe('Hai from ci/cd');
 	done();
 });
