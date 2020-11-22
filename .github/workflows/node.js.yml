@@ -42,4 +42,4 @@ jobs:
           cd ~/nodejs-cicd
           git pull origin master
           npm install --production
-          pm2 restart app.js
+          pm2 restart node-app
