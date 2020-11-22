@@ -11,9 +11,6 @@ app.get('/hai', function (req, res) {
 	return res.send('Hai');
 });
 
-// listen to port 7000 by default
-app.listen(process.env.PORT || 2121, () => {
-	console.log('Server is running');
-});
+
 
 module.exports = app;
