@@ -5,10 +5,7 @@
 
  // Respond with "hello world" for requests that hit our root "/"
  app.get("/", function (req, res) {
-  return res.send("Hello World");
- });
- app.get("/woy", function (req, res) {
-  return res.send("Woy");
+  return res.send("Hello World With CI CD");
  });
 
  // listen to port 7000 by default
