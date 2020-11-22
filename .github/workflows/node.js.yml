@@ -20,10 +20,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - name: npm install and test
+    - name: npm install
       run: |
         npm install
-        npm test
       env:
         CI: true
 
@@ -43,4 +42,4 @@ jobs:
           cd ~/nodejs-cicd
           git pull origin master
           npm install --production
-          pm2 restart node-app
+          pm2 restart app.js
